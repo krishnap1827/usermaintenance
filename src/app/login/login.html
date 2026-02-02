@@ -1,0 +1,31 @@
+<div class="login-container-style">
+  <mat-card class="card-login-style">
+
+    <h2>Login</h2>
+
+    <form [formGroup]="loginForm" (ngSubmit)="login()">
+
+      <mat-form-field appearance="outline" class="input-width">
+        <mat-label>Email</mat-label>
+        <input matInput formControlName="email">        
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="input-width">
+        <mat-label>Password</mat-label>
+        <input type="password"
+          matInput          
+          formControlName="password">
+
+      </mat-form-field>
+
+      <button
+        mat-raised-button
+        color="primary"
+        class="input-width"
+        type="submit">
+        Login
+      </button>
+
+    </form>
+  </mat-card>
+</div>

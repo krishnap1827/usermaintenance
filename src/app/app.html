@@ -1,0 +1,9 @@
+<mat-toolbar>
+  <span>User Management</span>
+  @if(isLoggedIn) {
+      <button matButton="tonal" (click)="logout()">Logout</button>
+  }
+
+</mat-toolbar>
+
+<router-outlet />

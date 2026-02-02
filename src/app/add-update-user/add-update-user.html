@@ -1,0 +1,48 @@
+<mat-card class="card-style">
+
+    <div class="dialog-header">
+        <h2>{{ heading }}</h2>
+    </div>
+
+    <div class="dialog-content">
+        <form [formGroup]="userForm">
+
+            <mat-form-field appearance="outline" class="input-width">
+                <mat-label>First Name</mat-label>
+                <input matInput formControlName="firstName">
+            </mat-form-field>
+
+            <mat-form-field appearance="outline" class="input-width">
+                <mat-label>Last Name</mat-label>
+                <input matInput formControlName="lastName">
+            </mat-form-field>
+
+            <mat-form-field appearance="outline" class="input-width">
+                <mat-label>Email</mat-label>
+                <input matInput formControlName="email">
+            </mat-form-field>
+
+            <mat-form-field appearance="outline" class="input-width">
+                <mat-label>Password</mat-label>
+                <input type="password" matInput formControlName="password">
+            </mat-form-field>
+            <mat-form-field appearance="outline" class="input-width">
+                <mat-label>City</mat-label>
+                <input matInput formControlName="city"> 
+            </mat-form-field>
+            <mat-form-field appearance="outline" class="input-width">
+                <mat-label>Phone Number</mat-label>
+                <input matInput formControlName="phoneNumber"> 
+            </mat-form-field>           
+
+        </form>
+    </div>
+
+    <div class="dialog-actions">
+        <button mat-button (click)="close()">Cancel</button>
+        <button mat-raised-button color="primary" (click)="saveData()">Save</button>
+    </div>
+
+
+
+</mat-card>
